@@ -1,0 +1,24 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Geoflash</title>
+		<link rel="stylesheet" href="projet1.css">
+		<script>
+			var myPix = new Array("Q01.png","Q02.png","Q03.png","Q04.png","Q05.png","Q06.png");
+
+			function choosePic() {
+			var randomNum = Math.floor(Math.random() * myPix.length);
+			document.getElementById("myPicture").src = myPix[randomNum];
+}
+
+		</script>
+	</head>
+	<body>
+		<h1>Geoflash Physique Chimie 2nd</h1>
+			<div onclick="choosePic()">
+			<img id="myPicture" style="width:449px ; height:650px"/>
+			</div>
+			<input id="question" type="button" value="question" onclick="choosePic()"/>
+			<button onclick="Answer()">Reponse</button>
+	</body>
+</html>
